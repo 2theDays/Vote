@@ -35,12 +35,6 @@ streamlit run app.py
 
 ## 배포
 
-### Streamlit Cloud (권장)
-
-1. GitHub에 코드 푸시
-2. [Streamlit Cloud](https://streamlit.io/cloud)에서 배포
-3. 환경 변수에 API 키 설정
-
 ### Streamlit Cloud 배포 (권장)
 
 Streamlit 앱은 Streamlit Cloud에서 가장 잘 작동합니다.
