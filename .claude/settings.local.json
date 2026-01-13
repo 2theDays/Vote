@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(streamlit run:*)",
+      "Bash(python -c:*)",
+      "Bash(where:*)",
+      "Bash(py --version)",
+      "Bash(py -c:*)",
+      "Bash(py -m pip install:*)",
+      "Bash(dir \"C:\\\\Python*\")",
+      "Bash(dir:*)",
+      "Bash(\"C:\\\\Users\\\\MyPC\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python314\\\\Scripts\\\\pip.exe\" install:*)",
+      "Bash(\"C:\\\\Users\\\\MyPC\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python314\\\\python.exe\" -m pip install streamlit google-generativeai duckduckgo-search plotly pandas numpy requests)",
+      "Bash(/c/Users/MyPC/AppData/Local/Programs/Python/Python314/python.exe -m pip install:*)",
+      "Bash(pip install:*)",
+      "Bash(cmd //c \"pip install streamlit google-generativeai duckduckgo-search plotly pandas numpy requests\")",
+      "Bash(pip --version:*)",
+      "Bash(\"/c/Users/MyPC/AppData/Local/Programs/Python/Python314/Scripts/streamlit.exe\" run app.py --server.port 8501 --server.headless true)",
+      "Bash(\"/c/Users/MyPC/AppData/Local/Programs/Python/Python314/python.exe\":*)",
+      "Bash(\"/c/Python314/python.exe\":*)",
+      "Bash(\"/c/Users/MyPC/AppData/Local/Programs/Python/Python314/Scripts/streamlit.exe\" --version)",
+      "Bash(\"/c/Windows/py.exe\" -0)",
+      "Bash(\"/c/Windows/py.exe\" -m ensurepip --upgrade)",
+      "Bash(\"/c/Windows/py.exe\" -m pip install:*)",
+      "Bash(\"/c/Windows/py.exe\" -m streamlit run app.py --server.port 8501 --server.headless true)"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "election-analysis",
+  "version": "1.0.0",
+  "description": "선거 전략 인사이트: 예측과 전망",
+  "scripts": {
+    "deploy": "vercel"
+  },
+  "keywords": [
+    "streamlit",
+    "election",
+    "analysis"
+  ],
+  "author": "",
+  "license": "MIT"
+}

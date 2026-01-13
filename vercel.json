@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "buildCommand": "echo 'Streamlit apps are best deployed on Streamlit Cloud'",
+  "outputDirectory": ".",
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/index.html"
+    }
+  ]
+}

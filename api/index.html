@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선거 전략 인사이트 - 배포 안내</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(30, 41, 59, 0.8);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #3b82f6;
+            margin-bottom: 10px;
+        }
+        .warning {
+            background: rgba(239, 68, 68, 0.2);
+            border-left: 4px solid #ef4444;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .info {
+            background: rgba(59, 130, 246, 0.2);
+            border-left: 4px solid #3b82f6;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 10px 10px 10px 0;
+            transition: transform 0.2s;
+        }
+        .button:hover {
+            transform: translateY(-2px);
+        }
+        code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+        ol {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗳️ 선거 전략 인사이트</h1>
+        <p>네이버 + 구글(Apify) 트렌드 종합 분석 시스템</p>
+        
+        <div class="warning">
+            <h2>⚠️ Vercel 배포 제한사항</h2>
+            <p><strong>Streamlit 앱은 Vercel에서 직접 실행할 수 없습니다.</strong></p>
+            <p>Streamlit은 지속적인 서버 연결이 필요한 웹 애플리케이션이지만, Vercel은 서버리스 함수만 지원합니다.</p>
+        </div>
+
+        <div class="info">
+            <h2>✅ 권장 배포 방법: Streamlit Cloud</h2>
+            <p>Streamlit Cloud는 Streamlit 앱을 배포하기 위한 공식 플랫폼입니다.</p>
+            
+            <h3>배포 단계:</h3>
+            <ol>
+                <li>GitHub에 코드 푸시</li>
+                <li><a href="https://streamlit.io/cloud" target="_blank" class="button">Streamlit Cloud 접속</a></li>
+                <li>"New app" 클릭</li>
+                <li>GitHub 저장소 선택</li>
+                <li>Main file path: <code>app.py</code></li>
+                <li>Secrets에 API 키 추가:
+                    <ul>
+                        <li><code>GEMINI_API_KEY</code></li>
+                        <li><code>NAVER_CLIENT_ID</code></li>
+                        <li><code>NAVER_CLIENT_SECRET</code></li>
+                        <li><code>APIFY_API_KEY</code> (선택사항)</li>
+                    </ul>
+                </li>
+                <li>"Deploy" 클릭</li>
+            </ol>
+        </div>
+
+        <div class="info">
+            <h2>📋 로컬 실행</h2>
+            <p>로컬에서 테스트하려면:</p>
+            <pre style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; overflow-x: auto;"><code>pip install -r requirements.txt
+streamlit run app.py</code></pre>
+        </div>
+
+        <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #334155;">
+            <p style="color: #94a3b8; font-size: 0.9em;">
+                더 많은 정보는 <code>README.md</code> 파일을 참조하세요.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
